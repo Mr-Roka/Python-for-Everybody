@@ -2,13 +2,13 @@ words ={}
 file = open('words.txt')    #Opening the file
 
 for word in file:
-    print(word)
+    #print(word)
     line=word.strip()
-    words[word]=True
-while True:
-    if word=="done":
-        break
-    if word in words:
-        print(word, "is in the dictionary.")
-    else:
-        print(word, "is not in the dictionary.")
+    words[word]=None
+
+#print(words)
+
+if "hello" in words:
+    print("hello", "is in the dictionary.")
+else:
+    print("hello", "is not in the dictionary.")   
